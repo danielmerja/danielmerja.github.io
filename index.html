@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Tailwind CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-100 text-gray-900">
   <!-- Navigation -->
@@ -16,6 +18,7 @@
         <a class="px-3 py-2 text-gray-800 hover:text-gray-700" href="#services">Services</a>
         <a class="px-3 py-2 text-gray-800 hover:text-gray-700" href="#about">About</a>
         <a class="px-3 py-2 text-gray-800 hover:text-gray-700" href="#contact">Contact</a>
+        <a class="px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-500" href="#consultation">Free Consultation</a>
       </div>
     </div>
   </nav>
@@ -26,7 +29,7 @@
       <div class="text-center">
         <h1 class="text-white text-5xl font-bold">Empowering Startups to Succeed</h1>
         <p class="text-gray-300 mt-4 text-lg">Expert consulting services to help your startup thrive in a competitive market.</p>
-        <a href="#contact" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-500">Get in Touch</a>
+        <a href="#consultation" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-500">Book a Free Consultation</a>
       </div>
     </div>
   </section>
@@ -59,8 +62,24 @@
     </div>
   </section>
 
+  <!-- Advisory for Startups Section -->
+  <section id="advisory" class="bg-gray-200 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center">Advisory for Startups</h2>
+      <div class="mt-8 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2">
+          <img src="https://via.placeholder.com/500x300" alt="Advisory Service" class="rounded shadow">
+        </div>
+        <div class="md:w-1/2 mt-6 md:mt-0 md:ml-6">
+          <p class="text-lg leading-relaxed">Get personalized advisory services tailored to your startup's needs. For <strong>$2,500 per month</strong>, receive 10 hours of expert consulting to navigate challenges and accelerate growth.</p>
+          <a href="https://buy.stripe.com/your-stripe-link" class="mt-6 inline-block px-6 py-3 bg-green-600 text-white font-semibold rounded hover:bg-green-500">Purchase Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- About Section -->
-  <section id="about" class="bg-gray-200 py-12">
+  <section id="about" class="py-12">
     <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
       <div class="md:w-1/2">
         <img src="https://via.placeholder.com/500x300" alt="Daniel Merja" class="rounded shadow">
@@ -69,6 +88,15 @@
         <h2 class="text-3xl font-bold">About Me</h2>
         <p class="mt-4 text-lg leading-relaxed">I'm Daniel Merja, a seasoned consultant with over 10 years of experience helping startups achieve their goals. My mission is to provide actionable insights and strategies that drive growth and innovation.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- Free Consultation Section -->
+  <section id="consultation" class="container mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold text-center">Book a Free Consultation</h2>
+    <div class="mt-8 text-center">
+      <p class="text-lg leading-relaxed">Interested in discussing your startup's needs? Schedule a free 15-minute consultation.</p>
+      <a href="https://your-calendar-link.com" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-500">Schedule Now</a>
     </div>
   </section>
 
