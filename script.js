@@ -1,16 +1,17 @@
 // Mobile Menu Toggle
 const menuToggle = document.getElementById('menu-toggle');
-const menuList = document.querySelector('#mobile-menu ul');
+const mobileMenu = document.getElementById('mobile-menu');
+const menuList = mobileMenu.querySelector('ul');
 
 menuToggle.addEventListener('click', (event) => {
   event.stopPropagation();
-  menuList.classList.toggle('hidden');
+  menuList.classList.toggle('show');
 });
 
 // Close menu when clicking outside
 document.addEventListener('click', () => {
-  if (!menuList.classList.contains('hidden')) {
-    menuList.classList.add('hidden');
+  if (menuList.classList.contains('show')) {
+    menuList.classList.remove('show');
   }
 });
 
