@@ -18,3 +18,10 @@ document.addEventListener('click', () => {
 menuList.addEventListener('click', (event) => {
   event.stopPropagation();
 });
+
+// Add a personal welcome message
+document.addEventListener('DOMContentLoaded', () => {
+    const welcome = document.createElement('p');
+    welcome.textContent = "Welcome! I'm Daniel, here to help your startup thrive.";
+    document.body.prepend(welcome);
+});

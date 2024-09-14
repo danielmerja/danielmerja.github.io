@@ -10,108 +10,97 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-white text-black font-sans">
-  <div class="max-w-3xl mx-auto px-6">
+  <div class="max-w-3xl mx-auto">
     <!-- Header -->
     <header class="py-8">
-      <div class="flex items-center justify-between">
-        <h1 class="text-4xl font-bold">Daniel Merja</h1>
-        <!-- Mobile Menu Button -->
-        <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" class="md:hidden text-gray-600 hover:text-gray-800 focus:outline-none transition duration-200 ease-in-out">
-          <!-- Hamburger Icon -->
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
-      <nav id="mobile-menu" class="md:block">
-        <ul class="hidden md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-gray-600 mt-4 md:mt-0 transition-all duration-300 ease-in-out">
-          <li><a href="#advisory-packages" class="block py-2 hover:underline">Advisory Packages</a></li>
-          <li><a href="#consultation" class="block py-2 hover:underline">Free Consultation</a></li>
-          <li><a href="#free-resource" class="block py-2 hover:underline">Free Resource</a></li>
-          <li><a href="#about" class="block py-2 hover:underline">About</a></li>
+      <h1 class="notion-h1">Hey there! I'm Daniel Merja</h1>
+      <p class="notion-text text-xl mb-4">Your friendly neighborhood startup advisor 👋</p>
+      <nav>
+        <ul class="flex space-x-4 text-gray-600">
+          <li><a href="#how-i-help" class="notion-block">How I Help</a></li>
+          <li><a href="#lets-chat" class="notion-block">Let's Chat</a></li>
+          <li><a href="#free-resource" class="notion-block">Free Resource</a></li>
+          <li><a href="#about" class="notion-block">About Me</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Introduction -->
     <section class="mt-8">
-      <h2 class="text-3xl font-semibold mb-4 border-b-2 pb-2">Advisory Services for Startups</h2>
-      <p class="mt-2 text-gray-700">Expert consulting tailored to help your startup navigate challenges and achieve sustainable growth.</p>
+      <h2 class="notion-h2">Welcome to My Startup Advisory Corner!</h2>
+      <p class="notion-text">I'm here to help you navigate the exciting (and sometimes chaotic) world of startups. Whether you're just starting out or looking to scale, I've got your back!</p>
     </section>
 
-    <!-- Free Consultation -->
-    <section id="consultation" class="mt-12">
-      <h3 class="text-2xl font-semibold mb-4">Book a Free Consultation</h3>
-      <p class="mt-2 text-gray-700">Interested in discussing your startup's needs? Schedule a free 15-minute consultation.</p>
-      <a href="https://your-calendar-link.com" class="mt-4 inline-block text-blue-600 hover:underline">Schedule Now →</a>
-    </section>
-
-    <!-- Free Resource: Free PDF Teaser -->
-    <section id="free-resource" class="mt-12">
-      <h3 class="text-2xl font-semibold mb-4">Free Resource</h3>
-      <p class="mt-2 text-gray-700">Download our free PDF: <strong>"How to Make a Great Startup Pitch Deck"</strong> to help you create a compelling presentation for investors.</p>
-      <a href="path-to-your-pdf.pdf" class="mt-4 inline-block text-blue-600 hover:underline">Download Now →</a>
-    </section>
-
-    <!-- Advisory Packages -->
-    <section id="advisory-packages" class="mt-12">
-      <h3 class="text-2xl font-semibold mb-6">Our Advisory Packages</h3>
+    <!-- How I Help -->
+    <section id="how-i-help" class="mt-12">
+      <h3 class="notion-h3">How I Can Help You Thrive</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Package 1 -->
         <div class="bg-white shadow-md rounded-lg p-6">
-          <h4 class="text-xl font-semibold mb-2">Startup Essentials</h4>
-          <p class="text-gray-700 mb-4">Perfect for early-stage startups looking to establish a strong foundation.</p>
+          <h4 class="text-xl font-semibold mb-2">Startup Boost</h4>
+          <p class="text-gray-700 mb-4">Perfect for early-stage founders looking to build a solid foundation.</p>
           <ul class="list-disc list-inside text-gray-600 mb-4">
-            <li>5 Hours of Consulting</li>
-            <li>Business Strategy Development</li>
-            <li>Market Analysis</li>
+            <li>5 hours of personalized guidance</li>
+            <li>Crafting your unique strategy</li>
+            <li>Decoding your market</li>
           </ul>
-          <a href="https://buy.stripe.com/package1" class="text-green-600 hover:underline">Choose This Package →</a>
+          <a href="https://buy.stripe.com/package1" class="text-green-600 hover:underline">Let's Boost Your Startup →</a>
         </div>
-        <!-- Package 2 -->
         <div class="bg-white shadow-md rounded-lg p-6">
           <h4 class="text-xl font-semibold mb-2">Growth Accelerator</h4>
-          <p class="text-gray-700 mb-4">Designed for startups aiming to scale and optimize their operations.</p>
+          <p class="text-gray-700 mb-4">For startups ready to level up and optimize operations.</p>
           <ul class="list-disc list-inside text-gray-600 mb-4">
-            <li>10 Hours of Consulting</li>
-            <li>Operational Excellence</li>
-            <li>Advanced Market Strategies</li>
+            <li>10 hours of in-depth consulting</li>
+            <li>Streamlining your operations</li>
+            <li>Advanced market strategies</li>
           </ul>
-          <a href="https://buy.stripe.com/package2" class="text-green-600 hover:underline">Choose This Package →</a>
+          <a href="https://buy.stripe.com/package2" class="text-green-600 hover:underline">Accelerate Your Growth →</a>
         </div>
-        <!-- Package 3 -->
         <div class="bg-white shadow-md rounded-lg p-6">
-          <h4 class="text-xl font-semibold mb-2">Premium Partnership</h4>
-          <p class="text-gray-700 mb-4">Comprehensive support for established startups seeking long-term growth.</p>
+          <h4 class="text-xl font-semibold mb-2">Startup Sidekick</h4>
+          <p class="text-gray-700 mb-4">Your go-to advisor for long-term success and scalability.</p>
           <ul class="list-disc list-inside text-gray-600 mb-4">
-            <li>20 Hours of Consulting</li>
-            <li>Personalized Strategy Sessions</li>
-            <li>Full Market Integration</li>
+            <li>20 hours of comprehensive support</li>
+            <li>Tailored strategy sessions</li>
+            <li>Full market integration planning</li>
           </ul>
-          <a href="https://buy.stripe.com/package3" class="text-green-600 hover:underline">Choose This Package →</a>
+          <a href="https://buy.stripe.com/package3" class="text-green-600 hover:underline">Get a Startup Sidekick →</a>
         </div>
       </div>
     </section>
 
+    <!-- Let's Chat -->
+    <section id="lets-chat" class="mt-12">
+      <h3 class="notion-h3">Let's Chat About Your Startup!</h3>
+      <p class="notion-text">Curious about how we can work together? I'd love to hear about your startup and see how I can help. Book a free 15-minute chat with me!</p>
+      <a href="https://your-calendar-link.com" class="mt-4 inline-block text-blue-600 hover:underline">Schedule Our Coffee Chat ☕ →</a>
+    </section>
+
+    <!-- Free Resource -->
+    <section id="free-resource" class="mt-12">
+      <h3 class="notion-h3">Grab Your Free Startup Guide</h3>
+      <p class="notion-text">I've put together a free guide: <strong>"Crafting a Killer Startup Pitch Deck"</strong>. It's packed with tips to help you wow investors and nail your presentations!</p>
+      <a href="path-to-your-pdf.pdf" class="mt-4 inline-block text-blue-600 hover:underline">Download Your Free Guide 📚 →</a>
+    </section>
+
     <!-- About -->
     <section id="about" class="mt-12">
-      <h3 class="text-2xl font-semibold mb-4">About Me</h3>
-      <p class="mt-2 text-gray-700">I am Daniel Merja, the General Partner at <strong>Founders Committee Ventures</strong>, where I lead investment strategies and work closely with innovative startups to drive growth and success.</p>
+      <h3 class="notion-h3">A Bit About Me</h3>
+      <p class="notion-text">Hey! I'm Daniel Merja, General Partner at Founders Committee Ventures. I've been in the startup trenches, and now I'm passionate about helping founders like you turn great ideas into thriving businesses.</p>
 
       <!-- Professional Background -->
       <div class="mt-6">
-        <h4 class="text-xl font-semibold mb-2">Professional Background</h4>
-        <ul class="list-disc list-inside text-gray-700 space-y-2">
-          <li><strong>Founders Committee Ventures:</strong> [Brief description of your role and accomplishments]</li>
-          <li><strong>Previous Experience:</strong> [Details about previous roles, companies, and achievements]</li>
-          <li><strong>Education:</strong> [Your academic background, degrees, and any relevant certifications]</li>
+        <h4 class="notion-h3">My Startup Journey</h4>
+        <ul class="space-y-2">
+          <li class="notion-list-item"><strong>Founders Committee Ventures:</strong> Leading investment strategies and working hands-on with innovative startups.</li>
+          <li class="notion-list-item"><strong>Previous Adventures:</strong> [Share a brief, engaging summary of your past roles and achievements]</li>
+          <li class="notion-list-item"><strong>Learning Never Stops:</strong> [Mention your education and ongoing learning in a friendly way]</li>
         </ul>
       </div>
 
       <!-- Areas of Expertise -->
       <div class="mt-6">
-        <h4 class="text-xl font-semibold mb-2">Areas of Expertise</h4>
-        <p class="text-gray-700">[List or describe your key skills, areas of expertise, and any notable projects or initiatives you've led.]</p>
+        <h4 class="notion-h3">What I Bring to the Table</h4>
+        <p class="notion-text">From crafting killer pitch decks to navigating funding rounds, I've got a toolbox full of startup-boosting skills. Let's put them to work for your business!</p>
       </div>
 
       <!-- Optional: Professional Photo -->
@@ -119,8 +108,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="mt-12 py-8 border-t border-gray-200">
-      <p class="text-center text-gray-600">&copy; 2024 Daniel Merja. All rights reserved.</p>
+    <footer class="mt-12 py-8">
+      <p class="text-center text-gray-600">© 2024 Daniel Merja | Empowering startups, one great idea at a time 🚀</p>
     </footer>
   </div>
 
