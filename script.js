@@ -19,21 +19,21 @@ scrollToTopButton.addEventListener('click', () => {
 // Mobile Menu Toggle
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
+const menuList = mobileMenu.querySelector('ul'); // Added: Define menuList outside for broader scope
 
-menuToggle.addEventListener('click', () => {
-  const menuList = mobileMenu.querySelector('ul');
+menuToggle.addEventListener('click', (event) => {
+  event.stopPropagation(); // Prevents the click from bubbling up to the document
   menuList.classList.toggle('hidden');
 });
 
 // Close menu when clicking outside
 document.addEventListener('click', (event) => {
-  const menuList = mobileMenu.querySelector('ul');
   if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
     menuList.classList.add('hidden');
   }
 });
 
 // Prevent menu from closing when clicking inside it
-menu.addEventListener('click', (event) => {
+menuList.addEventListener('click', (event) => { // Changed 'menu' to 'menuList'
   event.stopPropagation();
 });
