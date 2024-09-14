@@ -15,3 +15,11 @@ scrollToTopButton.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
