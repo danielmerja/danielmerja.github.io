@@ -20,9 +20,9 @@ scrollToTopButton.addEventListener('click', () => {
 const menuToggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
 
-menuToggle.addEventListener('click', () => {
+menuToggle.addEventListener('click', (event) => {
+  event.stopPropagation();
   menu.classList.toggle('hidden');
-  menu.classList.toggle('flex');
 });
 
 // Close menu when clicking outside
@@ -32,6 +32,10 @@ document.addEventListener('click', (event) => {
   
   if (!isClickInsideMenu && !isClickOnMenuToggle && !menu.classList.contains('hidden')) {
     menu.classList.add('hidden');
-    menu.classList.remove('flex');
   }
+});
+
+// Prevent menu from closing when clicking inside it
+menu.addEventListener('click', (event) => {
+  event.stopPropagation();
 });
