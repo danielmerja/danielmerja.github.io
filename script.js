@@ -18,20 +18,18 @@ scrollToTopButton.addEventListener('click', () => {
 
 // Mobile Menu Toggle
 const menuToggle = document.getElementById('menu-toggle');
-const menu = document.getElementById('menu');
+const mobileMenu = document.getElementById('mobile-menu');
 
-menuToggle.addEventListener('click', (event) => {
-  event.stopPropagation();
-  menu.classList.toggle('hidden');
+menuToggle.addEventListener('click', () => {
+  const menuList = mobileMenu.querySelector('ul');
+  menuList.classList.toggle('hidden');
 });
 
 // Close menu when clicking outside
 document.addEventListener('click', (event) => {
-  const isClickInsideMenu = menu.contains(event.target);
-  const isClickOnMenuToggle = menuToggle.contains(event.target);
-  
-  if (!isClickInsideMenu && !isClickOnMenuToggle && !menu.classList.contains('hidden')) {
-    menu.classList.add('hidden');
+  const menuList = mobileMenu.querySelector('ul');
+  if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+    menuList.classList.add('hidden');
   }
 });
 
