@@ -22,4 +22,16 @@ const menu = document.getElementById('menu');
 
 menuToggle.addEventListener('click', () => {
   menu.classList.toggle('hidden');
+  menu.classList.toggle('flex');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (event) => {
+  const isClickInsideMenu = menu.contains(event.target);
+  const isClickOnMenuToggle = menuToggle.contains(event.target);
+  
+  if (!isClickInsideMenu && !isClickOnMenuToggle && !menu.classList.contains('hidden')) {
+    menu.classList.add('hidden');
+    menu.classList.remove('flex');
+  }
 });
